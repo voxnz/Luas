@@ -49,14 +49,14 @@ local function update_target_color()
     local target = entity_list.get_client_entity(targetIndex)
     if target and target:is_alive() and target:get_team_number() ~= localPlayer:get_team_number() then
         if target:is_player() then
-            local penis = ui.get('Visuals', 'Main', 'Esp', 'Default Target ESP', 'Name Color')
+            local other = ui.get('Visuals', 'Main', 'Esp', 'Default Target ESP', 'Name Color')
             local health_percentage = target:get_health() / target:get_max_health()
             local hue = health_percentage * 120 / 360 
             local saturation = 1
             local value = 1
             local opacity = targetColorOpacity:get() / 255
             local r, g, b, a = hsvToRGB(hue, saturation, value, opacity)
-            penis:set(color(r, g, b, a))
+            other:set(color(r, g, b, a))
         end
     end
 end
@@ -108,14 +108,14 @@ local function update_target_color()
     local target = entity_list.get_client_entity(targetIndex)
     if target and target:is_alive() and target:get_team_number() ~= localPlayer:get_team_number() then
         if target:is_player() then
-            local penis = ui.get('Visuals', 'Main', 'Esp', 'Default Target ESP', 'Health Color')
+            local other = ui.get('Visuals', 'Main', 'Esp', 'Default Target ESP', 'Health Color')
             local health_percentage = target:get_health() / target:get_max_health()
             local hue = health_percentage * 120 / 360
             local saturation = 1
             local value = 1
             local opacity = targetColorOpacity:get() / 255
             local r, g, b, a = hsvToRGB(hue, saturation, value, opacity)
-            penis:set(color(r, g, b, a))
+            other:set(color(r, g, b, a))
         end
     end
 end
@@ -165,14 +165,14 @@ local function update_target_color()
     local target = entity_list.get_client_entity(targetIndex)
     if target and target:is_alive() and target:get_team_number() ~= localPlayer:get_team_number() then
         if target:is_player() then
-            local penis = ui.get('Visuals', 'Main', 'Esp', 'Default Target ESP', 'Top Health Color')
+            local other = ui.get('Visuals', 'Main', 'Esp', 'Default Target ESP', 'Top Health Color')
             local health_percentage = target:get_health() / target:get_max_health()
             local hue = health_percentage * 120 / 360
             local saturation = 1
             local value = 1
             local opacity = targetColorOpacity:get() / 255
             local r, g, b, a = hsvToRGB(hue, saturation, value, opacity)
-            penis:set(color(r, g, b, a))
+            other:set(color(r, g, b, a))
         end
     end
 end
@@ -223,14 +223,14 @@ local function update_target_color()
     local target = entity_list.get_client_entity(targetIndex)
     if target and target:is_alive() and target:get_team_number() ~= localPlayer:get_team_number() then
         if target:is_player() then
-            local penis = ui.get('Visuals', 'Main', 'Esp', 'Default Target ESP', 'Health Text Color')
+            local other = ui.get('Visuals', 'Main', 'Esp', 'Default Target ESP', 'Health Text Color')
             local health_percentage = target:get_health() / target:get_max_health()
             local hue = health_percentage * 120 / 360
             local saturation = 1
             local value = 1
             local opacity = targetColorOpacity:get() / 255
             local r, g, b, a = hsvToRGB(hue, saturation, value, opacity)
-            penis:set(color(r, g, b, a))
+            other:set(color(r, g, b, a))
         end
     end
 end
@@ -282,14 +282,14 @@ local function update_target_color()
     local target = entity_list.get_client_entity(targetIndex)
     if target and target:is_alive() and target:get_team_number() ~= localPlayer:get_team_number() then
         if target:is_player() then
-            local penis = ui.get('Visuals', 'Main', 'Esp', 'Default Target ESP', 'Skeleton Color')
+            local other = ui.get('Visuals', 'Main', 'Esp', 'Default Target ESP', 'Skeleton Color')
             local health_percentage = target:get_health() / target:get_max_health()
             local hue = health_percentage * 120 / 360
             local saturation = 1
             local value = 1
             local opacity = targetColorOpacity:get() / 255
             local r, g, b, a = hsvToRGB(hue, saturation, value, opacity)
-            penis:set(color(r, g, b, a))
+            other:set(color(r, g, b, a))
         end
     end
 end
@@ -346,14 +346,14 @@ local function update_target_color()
     local target = entity_list.get_client_entity(targetIndex)
     if target and target:is_alive() and target:get_team_number() ~= localPlayer:get_team_number() then
         if target:is_player() then
-            local penis = ui.get('Visuals', 'Main', 'Chams', 'Default Target Chams', 'Player Material Color')
+            local other = ui.get('Visuals', 'Main', 'Chams', 'Default Target Chams', 'Player Material Color')
             local health_percentage = target:get_health() / target:get_max_health()
             local hue = health_percentage * 120 / 360
             local saturation = 1
             local value = 1
             local opacity = targetColorOpacity:get() / 255
             local r, g, b, a = hsvToRGB(hue, saturation, value, opacity)
-            penis:set(color(r, g, b, a))
+            other:set(color(r, g, b, a))
         end
     end
 end
